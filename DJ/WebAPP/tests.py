@@ -1,5 +1,9 @@
+import unittest
 from django.test import TestCase
-
+from selenium import webdriver
+option = webdriver.ChromeOptions()
+option.add_argument("headless")
+driver = webdriver.Chrome(chrome_options=option)
 # Create your tests here.
 #
 # from itertools import combinations
